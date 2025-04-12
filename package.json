@@ -1,0 +1,27 @@
+{
+  "name": "megaeth-farming-tool",
+  "version": "1.0.0",
+  "description": "MegaETH Farming Tool with Multiple Modules",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "megaeth",
+    "farming",
+    "crypto",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "figlet": "^1.6.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1"
+  }
+}
