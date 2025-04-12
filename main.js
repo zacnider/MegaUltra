@@ -7,6 +7,7 @@ const ora = require('ora');
 const { GTESwapper } = require('./modul/gte_swapper');
 const { CapMinter } = require('./modul/cap_minter');
 const { RaribleFunMinter } = require('./modul/rarible_fun_minter');
+onst { OnchainGM } = require('./modules/onchain_gm');
 // Diğer modülleri buraya ekleyebilirsiniz
 // const { ModulName } = require('./modules/modul_name');
 
@@ -41,12 +42,17 @@ class MegaEthFarmingController {
                 description: 'Cap ağında cUSD token mint işlemi gerçekleştirir',
                 module: CapMinter
              }, 
-
                'rarible_fun_minter': {
                 name: 'Rarible Fun NFT Minter',
                 description: 'Rarible.fun üzerinde "Fun Starts Here" NFT mint eder',
                 module: RaribleFunMinter
             },
+            'onchain_gm': {
+                name: 'OnchainGM',
+                description: 'OnchainGM  GM işlemi gerçekleştirir ',
+                module: OnchainGM
+            },
+            
             // Diğer modülleri buraya ekleyebilirsiniz
             // 'module_name': {
             //    name: 'Module Display Name',
