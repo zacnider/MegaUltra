@@ -1,4 +1,4 @@
-# GTE Swapper - Kurulum ve Kullanım Kılavuzu
+# MegaUltra - Kurulum ve Kullanım Kılavuzu
 
 ## Kurulum Adımları
 
@@ -26,6 +26,9 @@ cd MegaUltra
    ```
 
 4. **Programı Çalıştırma**
+  ```bash
+   screen -S mega
+   ```
 
    ```bash
    node main.js
