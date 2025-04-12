@@ -30,7 +30,7 @@ cd MegaUltra
    screen -S mega
    ```
 
-   ```bash
+  ```bash
    node main.js
    ```
 
