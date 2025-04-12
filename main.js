@@ -6,7 +6,7 @@ const gradient = require('gradient-string');
 const ora = require('ora');
 const { GTESwapper } = require('./modul/gte_swapper');
 const { CapMinter } = require('./modul/cap_minter');
-
+const { RaribleFunMinter } = require('./modul/rarible_fun_minter');
 // Diğer modülleri buraya ekleyebilirsiniz
 // const { ModulName } = require('./modules/modul_name');
 
@@ -42,7 +42,11 @@ class MegaEthFarmingController {
                 module: CapMinter
              }, 
 
-
+               'rarible_fun_minter': {
+                name: 'Rarible Fun NFT Minter',
+                description: 'Rarible.fun üzerinde "Fun Starts Here" NFT mint eder',
+                module: RaribleFunMinter
+            },
             // Diğer modülleri buraya ekleyebilirsiniz
             // 'module_name': {
             //    name: 'Module Display Name',
