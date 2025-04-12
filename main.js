@@ -7,7 +7,8 @@ const ora = require('ora');
 const { GTESwapper } = require('./modul/gte_swapper');
 const { CapMinter } = require('./modul/cap_minter');
 const { RaribleFunMinter } = require('./modul/rarible_fun_minter');
-onst { OnchainGM } = require('./modules/onchain_gm');
+const { OnchainGM } = require('./modules/onchain_gm');
+const { TekoOperations } = require('./modul/teko_operations');
 // Diğer modülleri buraya ekleyebilirsiniz
 // const { ModulName } = require('./modules/modul_name');
 
@@ -51,6 +52,11 @@ class MegaEthFarmingController {
                 name: 'OnchainGM',
                 description: 'OnchainGM  GM işlemi gerçekleştirir ',
                 module: OnchainGM
+            },
+             'teko_operations': {                                  
+            name: 'Teko Operations',
+            description: 'Teko platformunda token mint, deposit ve withdraw işlemleri yapar',
+            module: TekoOperations
             },
             
             // Diğer modülleri buraya ekleyebilirsiniz
